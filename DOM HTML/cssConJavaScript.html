@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS con JavaScript</title>
+</head>
+<body>
+    <!--DEBES PRESIONAR EL TITULO PARA VISUALIZAR LOS CAMBIOS-->
+    <h1 onclick="cambiarTexto(this)">CSS con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br><br>
+    <script>
+        //document.getElementById('titulo').style.color = 'crimson';
+        function mostrar() {
+            
+            //document.getElementById('titulo').style.color = 'blue';
+        }
+        function cambiarTexto(titulo) {
+            titulo.innerHTML = 'Nuevo Titulo...';
+        }
+    </script>
+</body>
+</html>

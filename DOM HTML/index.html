@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM con JavaScript</title>
+    <style>
+        .azul{
+            color:blue;
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+    <h1 class="azul">DOM con JavaScript</h1>
+    <p class="azul">Saludos!</p>
+    <p class="azul">Otro parrafo</p>
+    <script>
+        // let cabecero = document.getElementById('cabecero');
+        // let parrafo = document.getElementById('parrafo1');
+        // console.log(`Valor cabecero: ${cabecero.innerHTML}`);
+        // console.log(`Valor parrafo: ${parrafo1.innerHTML}`);
+        // console.log('Saludos desde JavaScript');
+        // cabecero.innerHTML = 'Nuevo cabecero';
+        // parrafo.innerHTML = 'Nuevo valor del parrafo';
+        //let parrafo = document.getElementsByTagName('p');
+        //let elementos = document.getElementsByClassName('azul')
+        let elementos = document.querySelectorAll('p.azul');
+        console.log(`No. Objetos: ${elementos.length}`);
+        // for(let i = 0; i < elementos.length; i++) {
+        //     console.log(`${i} - ${elementos[i].innerHTML}`);
+        // }
+        for(let elemento of elementos) {
+            console.log(`${elemento.innerHTML}`);
+        }
+
+    </script>
+</body>
+</html>

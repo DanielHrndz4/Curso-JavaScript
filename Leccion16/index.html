@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  </head>
+  <body>
+	  <div id="card" class="col-10 bg-danger">
+	  	<label id="numero1">Ingrese el primer numero: </label><br>
+		  <input class="col-4" type="text" name="numeroUno" id="numeroUno" placeholder="Digite el primer numero"><br><br>
+		 <label id="numero2">Ingrese el segundo numero: </label><br>
+		  <input class="col-4" type="text" name="numeroDos" id="numeroDos" placeholder="Digite el segundo numero"><br><br>
+		  <input type="submit" name="sumar" id="sumar" value="Sumar" onClick="sumar()">
+	  </div>
+	  <div id="resultado" class="bg-primary col-10"></div>
+	<script src="js/index.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
